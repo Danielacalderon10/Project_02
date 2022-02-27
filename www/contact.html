@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  type= "text/css" href="application_contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="./form.js" defer></script>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+    
+    <title>Home Page</title>
+  </head>
+  <body>
+          <!-- header-->
+    <header>
+        <div class="header">
+                <img class="Header_logo" src="Assets/full_logo_white.png" href="">
+           
+        <ul class="navigation">
+            <a href="index.html">Home Page</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
+        </ul>
+
+        
+
+      </div>
+    </header>
+
+
+
+    <!-- main -->
+    <section class="section1">
+        <img class="main_logo" src="Assets/logo_mrcoffee.png" > 
+
+    <div id="title"> 
+        <h2>On vous attend !</h2>
+    </div> 
+
+  <!-- FORM -->
+
+ <!-- MODAL -->
+    <div id="myModal" class="hidden modal-overlay ">
+
+        <!-- MODAL CONTENT -->
+      <div class="modal">
+        <div id="part">
+        <div id="box1">
+          <img class="main_logo2" src="Assets/logo_mrcoffee.png" >
+        </div>
+        <div id="box2">
+         <h1>MERCI</h1><br>
+         <h2>Votre message a bien été envoyé!</h2><br>
+        </div>
+      </div>
+         
+         <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+
+         <button type="submit" id="close-modal" class="modal-bn close">Fermer</button>
+        
+      </div>
+    </div>
+
+ 
+   <!--contact form -->
+   <form id="contact-form">
+
+
+  <!-- NAME -->
+  <div>
+    <label for="first-name">First name: *</label><br>
+    <input
+      type="text"
+      name="first-name"
+      id="first-name"
+      class="input"
+      required
+    /><br><br>
+  </div>
+  <!-- LAST NAME -->
+  <div>
+    <label for="last-name">Last name: *</label><br>
+    <input
+      type="text"
+      name="last-name"
+      id="last-name"
+      class="input"
+      required
+    /><br><br>
+  </div>
+        <!-- PREFERRED CONTACT -->
+        <div>
+          <label for="method">Preferred contact</label>
+          <select name="method" id="method"  class="input"><br>
+            <option value="blank"></option>
+            <option value="mobile">mobile</option>
+            <option value="email">email</option>
+          </select>
+        </div><br>
+        <!-- MOBILE -->
+        <div class="hidden mobile-container">
+          <label for="mobile">Mobile: *</label><br>
+          <input type="text" name="mobile" id="mobile" value="" class="input" /><br><br>
+        </div>
+        <!-- EMAIL -->
+        <div class="hidden email-container">
+          <label for="email">Email: *</label><br>
+          <input type="text" name="email" id="email" value=""  class="input" /><br><br>
+        </div>
+       
+<!-- MESSAGE -->
+        <div class="messageblock">
+          <label for="message">Message *</label><br>
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          cols="30" 
+          rows="5"
+          class="input"
+          required>
+        </textarea>
+       </div><br><br>
+
+  <!--  Submit -->
+       <div class="hidden submit-container">
+        <input
+          type="submit"
+          name="submit"
+          id="submit"
+          class="submit"
+          value="Send message"
+        />
+      </div>
+
+       
+      
+    </form>
+     <!-- details  -->
+
+    <div class= "part">
+            <div id="box"> 
+              <p><b>Mr.Coffee15</b>
+                <br>place Jules Guesde</br>
+                    75006 Paris
+            </div>
+           <div id="box"> 
+              <p>Tel : +33 9 46 25 78 45
+                <br> Mail : contact@mr-coffee.com</br></p>
+           </div>
+       </div> 
+
+
+       <div id="map"> 
+        <img class="map" src="Assets/carte_contact.png" >
+    </div> 
+    <!-- footer -->
+    
+
+    <footer>
+        <div class="footer">
+            <img class="footer_logo" src="Assets/logo_blanc.png">  
+            <li class="find">Find us </li>
+            <ul class="footer_social">
+                
+                <a><img class="social" src="Assets/logo_facebook.png">  </a>
+                <a><img class="social" src="Assets/logo_linkedin.png">  </a>
+                <a><img class="social" src="Assets/logo_twitter.png">  </a>
+              </ul>
+
+        </div>
+    
+
+    </footer>
+
+
+
+  
+
+
+
+
+  </body>
+</html>
